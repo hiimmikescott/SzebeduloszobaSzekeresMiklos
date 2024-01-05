@@ -1,0 +1,21 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>date</th>
+            <th>Name</th>
+            <th>persons</th>
+            <th>escape room</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let room of rooms">
+            <td>{{ room.datum }}</td>
+            <td>{{ room.nev }}</td>
+            <td>{{ room.fo }}</td>
+            <td>{{ room.helyszin }}</td>
+
+        </tr>
+    </tbody>
+</table>
+<button routerLink=""> back to home page</button>

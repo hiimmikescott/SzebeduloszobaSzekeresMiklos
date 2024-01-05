@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escape Room Booking</title>
+
+  <style>
+
+    .escape-room {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin: 10px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .escape-room h3 {
+      color: #333;
+    }
+
+    .escape-room p {
+      color: #666;
+    }
+  
+    .escape-room {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin: 10px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .escape-room h3 {
+      color: #333;
+    }
+
+    .escape-room p {
+      color: #666;
+    }
+    </style>
+</head>
+
+<h2>Book Your Adventure</h2>
+<p>Ready for an unforgettable experience? Book your escape room adventure now!</p>
+
+
+<form action="/booking" method="post">
+  <label for="room.datum">date of reserv:</label>
+  <input type="text" id="room.datum" name="room.datum" required>
+
+  <label for="room.nev">name</label>
+  <input type="text" id="room.nev" name="room.nev" required>
+
+  <label for="room.fo">number of person</label>
+  <input type="text" id="room.fo" name="room.fo" required>
+
+  <label for="room.helyszin">Select Room:</label>
+  <select id="room.helyszin" name="room.helyszin" required>
+    <option value="room1">Room Name 1</option>
+    <option value="room2">Room Name 2</option>
+    <option value="room3">Room Name 3</option>
+
+  </select>
+
+  <button type="submit">Book Now</button>
+</form>
+
+<button routerLink=""> back to home page</button>
